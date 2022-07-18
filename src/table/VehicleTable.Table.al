@@ -16,39 +16,44 @@ table 60000 "Vehicle Table"
             DataClassification = CustomerContent;
             Caption = 'Description';
         }
-        field(3; "Search"; Text[20])
+        field(3; "Description 2"; Text[20])
         {
             DataClassification = CustomerContent;
-            Caption = 'Search';
+            Caption = 'Description 2';
         }
-        field(4; "Vehicle Group Code"; Text[20])
+        field(4; "Search Description"; Text[20])
+        {
+            DataClassification = CustomerContent;
+            Caption = 'Search Description';
+        }
+        field(5; "Vehicle Group Code"; Text[20])
         {
             Caption = 'Vechile Group Code';
             TableRelation = "Vehicle Type Table";
         }
-        field(5; "Stock"; Decimal)
+        field(6; "Inventory"; Decimal)
         {
-            Caption = 'Stock';
+            Caption = 'Inventory';
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = Sum("Vehicle Ledger Entry Table".Amount
             WHERE("No." = Field("No.")
             ));
         }
-        field(6; "Net Change"; Decimal)
+        field(7; "Net Change"; Decimal)
         {
             Caption = 'Net Change';
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = Sum("Vehicle Ledger Entry Table".Amount
             WHERE("No." = Field("No."),
-            "Posting Date" = Field("Posting Date Filter")
+            "Posting Date" = Field("Date Filter")
             ));
 
         }
-        field(7; "Amount of Purchase"; Decimal)
+        field(8; "Purchase Amount"; Decimal)
         {
-            Caption = 'Amount of Purchase';
+            Caption = 'Purchase Amount';
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = Sum("Vehicle Ledger Entry Table".Amount
@@ -56,11 +61,15 @@ table 60000 "Vehicle Table"
             "Entry Type" = const(Purchase)
             ));
         }
-        field(8; "Posting Date Filter"; Date)
+        field(9; "Date Filter"; Date)
         {
             Editable = false;
             FieldClass = FlowFilter;
 
+        }
+        field(10; "Image"; Media)
+        {
+            DataClassification = CustomerContent;
         }
     }
 
@@ -71,6 +80,16 @@ table 60000 "Vehicle Table"
         key(Key1; "No.")
         {
             Clustered = true;
+        }
+    }
+
+    fieldgroups
+    {
+        fieldgroup(Brick; "Vehicle Group Code", "No.", "Inventory", Image)
+        {
+        }
+        fieldgroup(DropDown; "No.", "Vehicle Group Code", Inventory)
+        {
         }
     }
 }
