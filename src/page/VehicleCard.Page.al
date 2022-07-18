@@ -1,4 +1,4 @@
-page 50400 "Vehicle Card"
+page 60200 "Vehicle Card"
 {
     PageType = Card;
     UsageCategory = None;
@@ -16,43 +16,42 @@ page 50400 "Vehicle Card"
                 field("No."; "No.")
                 {
                     ApplicationArea = all;
-                    Editable = true;
+                    ToolTip = 'Specifies the vehicle''s no';
+                    NotBlank = true;
+                    ShowMandatory = true;
                 }
                 field("Description"; Description)
                 {
                     ApplicationArea = all;
-                    Editable = true;
+                    ToolTip = 'Specifies the vehicle''s description';
                 }
                 field("Search"; Search)
                 {
                     ApplicationArea = all;
-                    Editable = true;
+                    ToolTip = 'Specifies the vehicle''s search name';
                 }
-                field("VechileGroupCode"; VechileGroupCode)
+                field("Vechile Group Code"; "Vehicle Group Code")
                 {
                     ApplicationArea = all;
-                    Editable = true;
+                    ToolTip = 'Specifies the vehicle''s type';
                 }
                 field("Stock"; Stock)
                 {
                     ApplicationArea = all;
-                    Editable = false;
+                    ToolTip = 'Specifies the vehicle''s stock amount';
                 }
-                field("NetChange"; NetChange)
+                field("Net Change"; "Net Change")
                 {
                     ApplicationArea = all;
-
-                    Editable = false;
+                    ToolTip = 'Specifies the vehicle''s net change amount. Difference from the stock value is the net change has a date filter';
                 }
-
+                field("Amount of Purchase"; "Amount of Purchase")
+                {
+                    ApplicationArea = all;
+                    ToolTip = 'Specifies the vehicle''s total amount of purchase process';
+                }
             }
         }
     }
 
-    actions
-    {
-        area(Processing)
-        {
-        }
-    }
 }
