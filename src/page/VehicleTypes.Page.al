@@ -18,14 +18,14 @@ page 60102 "Vehicle Types"
             repeater(GroupName)
             {
                 ShowCaption = false;
-                field("Code"; "Code")
+                field("Code"; Rec."Code")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the vehicle type';
                     ShowMandatory = true;
                     NotBlank = true;
                 }
-                field("Description"; "Description")
+                field("Description"; Rec."Description")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the description of the vehicle type';

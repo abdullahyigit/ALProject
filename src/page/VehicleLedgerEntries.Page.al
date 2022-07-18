@@ -15,78 +15,78 @@ page 60101 "Vehicle Ledger Entries"
         {
             repeater(GroupName)
             {
-                field("No."; "No.")
+                field("No."; Rec."No.")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the vehicle''s no.';
                 }
-                field("Posting Date"; "Posting Date")
+                field("Posting Date"; Rec."Posting Date")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the date when the posting of the sales document will be recorded.';
 
                 }
-                field("Document Date"; "Document Date")
+                field("Document Date"; Rec."Document Date")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the date when the related document was created.';
                 }
-                field("Entry Type"; "Entry Type")
+                field("Entry Type"; Rec."Entry Type")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies whether the process type is a sale or a purchase';
                 }
-                field("Document No."; "Document No.")
+                field("Document No."; Rec."Document No.")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the document no.';
                 }
-                field("External Document No."; "External Document No.")
+                field("External Document No."; Rec."External Document No.")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies a document number that refers to the customer''s or vendor''s numbering system.';
                 }
-                field("Source Type"; "Source Type")
+                field("Source Type"; Rec."Source Type")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the source type.';
                 }
-                field("Source No."; "Source No.")
+                field("Source No."; Rec."Source No.")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the source no.';
                 }
-                field("Description"; "Description")
+                field("Description"; Rec."Description")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the description.';
                 }
-                field("Amount"; Amount)
+                field("Amount"; Rec.Amount)
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the amount of sale/purchase process.';
                 }
-                field("Positive"; Positive)
+                field("Positive"; Rec.Positive)
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies whether the entered amount is positive or not. This value is generated automatically when user entered an amount.';
                 }
-                field("No. Series"; "No. Series")
+                field("No. Series"; Rec."No. Series")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the number series.';
                 }
-                field("Document Line No."; "Document Line No.")
+                field("Document Line No."; Rec."Document Line No.")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the document line no.';
                 }
-                field("Vehicle Description"; "Vehicle Description")
+                field("Vehicle Description"; Rec."Vehicle Description")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies a vehicle description for the entry.';
                 }
-                field(EntryNo; EntryNo)
+                field(EntryNo; Rec.EntryNo)
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the number of an entry. This number is generated automatically when user selects a vehicle.';
