@@ -1,8 +1,8 @@
 table 60000 "Vehicle Table"
 {
     DataClassification = CustomerContent;
-    DrillDownPageId = "Vehicle List";
-    LookupPageId = "Vehicle List";
+    DrillDownPageId = "Vehicles";
+    LookupPageId = "Vehicles";
 
     fields
     {

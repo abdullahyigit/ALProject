@@ -1,15 +1,15 @@
 table 50202 "Vehicle Type Table"
 {
     DataClassification = CustomerContent;
-    DrillDownPageId = "Vehicle Type List";
-    LookupPageId = "Vehicle Type List";
+    DrillDownPageId = "Vehicle Types";
+    LookupPageId = "Vehicle Types";
 
     fields
     {
-        field(1; "No."; Text[20])
+        field(1; "Code"; Text[20])
         {
             DataClassification = CustomerContent;
-            Caption = 'No.';
+            Caption = 'Code';
         }
         field(2; "Description"; Text[20])
         {
@@ -20,7 +20,7 @@ table 50202 "Vehicle Type Table"
 
     keys
     {
-        key(Key1; "No.")
+        key(Key1; "Code")
         {
             Clustered = true;
         }

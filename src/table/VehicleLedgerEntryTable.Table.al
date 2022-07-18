@@ -1,8 +1,8 @@
 table 60001 "Vehicle Ledger Entry Table"
 {
     DataClassification = CustomerContent;
-    DrillDownPageId = "Vehicle Ledger Entry List";
-    LookupPageId = "Vehicle Ledger Entry List";
+    DrillDownPageId = "Vehicle Ledger Entries";
+    LookupPageId = "Vehicle Ledger Entries";
 
     fields
     {

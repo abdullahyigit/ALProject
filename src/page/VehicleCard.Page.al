@@ -29,6 +29,7 @@ page 60200 "Vehicle Card"
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies a second description of a vehicle.';
+                    Visible = false;
                 }
                 field("Search Description"; "Search Description")
                 {
@@ -48,7 +49,7 @@ page 60200 "Vehicle Card"
                 field("Net Change"; "Net Change")
                 {
                     ApplicationArea = all;
-                    ToolTip = 'Specifies the vehicle''s net change amount. Difference from the stock value is the net change has a date filter';
+                    ToolTip = 'Specifies the net change in the inventory during the time period in the Date Filter field.';
                 }
                 field("Purchase Amount"; "Purchase Amount")
                 {
