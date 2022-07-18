@@ -22,6 +22,8 @@ table 60001 "Vehicle Ledger Entry Table"
                     CurrVehicle.Next();
                     EntryNo := CurrVehicle.EntryNo + 1;
                 end until CurrVehicle.Next() = 0;
+
+
             end;
         }
         field(2; "Posting Date"; Date)
@@ -83,10 +85,10 @@ table 60001 "Vehicle Ledger Entry Table"
             DataClassification = CustomerContent;
             Caption = 'Positive';
         }
-        field(12; "Number Series"; Integer)
+        field(12; "No. Series"; Integer)
         {
             DataClassification = CustomerContent;
-            Caption = 'Number Series';
+            Caption = 'No. Series';
         }
         field(13; "Document Line No."; Integer)
         {

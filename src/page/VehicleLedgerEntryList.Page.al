@@ -23,13 +23,13 @@ page 60101 "Vehicle Ledger Entry List"
                 field("Posting Date"; "Posting Date")
                 {
                     ApplicationArea = all;
-                    ToolTip = 'Specifies the posting date of the process';
+                    ToolTip = 'Specifies the date when the posting of the sales document will be recorded.';
 
                 }
                 field("Document Date"; "Document Date")
                 {
                     ApplicationArea = all;
-                    ToolTip = 'Specifies the document date of the process';
+                    ToolTip = 'Specifies the date when the related document was created.';
                 }
                 field("Entry Type"; "Entry Type")
                 {
@@ -44,7 +44,7 @@ page 60101 "Vehicle Ledger Entry List"
                 field("External Document No."; "External Document No.")
                 {
                     ApplicationArea = all;
-                    ToolTip = 'Specifies the external document no.';
+                    ToolTip = 'Specifies a document number that refers to the customer''s or vendor''s numbering system.';
                 }
                 field("Source Type"; "Source Type")
                 {
@@ -71,10 +71,10 @@ page 60101 "Vehicle Ledger Entry List"
                     ApplicationArea = all;
                     ToolTip = 'Specifies whether the entered amount is positive or not. This value is generated automatically when user entered an amount.';
                 }
-                field("Number Series"; "Number Series")
+                field("No. Series"; "No. Series")
                 {
                     ApplicationArea = all;
-                    ToolTip = 'Specifies te number series.';
+                    ToolTip = 'Specifies the number series.';
                 }
                 field("Document Line No."; "Document Line No.")
                 {

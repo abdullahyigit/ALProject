@@ -23,29 +23,34 @@ page 60200 "Vehicle Card"
                 field("Description"; Description)
                 {
                     ApplicationArea = all;
-                    ToolTip = 'Specifies the vehicle''s description';
+                    ToolTip = 'Specifies a description of a vehicle.';
                 }
-                field("Search"; Search)
+                field("Description 2"; "Description 2")
                 {
                     ApplicationArea = all;
-                    ToolTip = 'Specifies the vehicle''s search name';
+                    ToolTip = 'Specifies a second description of a vehicle.';
+                }
+                field("Search Description"; "Search Description")
+                {
+                    ApplicationArea = all;
+                    ToolTip = 'Specifies text to search for when you do not know the number of the vehicle.';
                 }
                 field("Vechile Group Code"; "Vehicle Group Code")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the vehicle''s type';
                 }
-                field("Stock"; Stock)
+                field("Inventory"; Inventory)
                 {
                     ApplicationArea = all;
-                    ToolTip = 'Specifies the vehicle''s stock amount';
+                    ToolTip = 'Specifies how many vehicles are in inventory.';
                 }
                 field("Net Change"; "Net Change")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the vehicle''s net change amount. Difference from the stock value is the net change has a date filter';
                 }
-                field("Amount of Purchase"; "Amount of Purchase")
+                field("Purchase Amount"; "Purchase Amount")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the vehicle''s total amount of purchase process';
