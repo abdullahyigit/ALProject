@@ -41,7 +41,8 @@ table 60000 "Vehicle Table"
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = Sum("Vehicle Ledger Entry Table".Amount
-            WHERE("No." = Field("No.")
+            WHERE("No." = Field("No."),
+            "Posting Date" = Field("Posting Date Filter")
             ));
 
         }
@@ -55,21 +56,7 @@ table 60000 "Vehicle Table"
             "Entry Type" = const(Purchase)
             ));
         }
-        field(8; "Last Year Filter"; Date)
-        {
-            Editable = false;
-            FieldClass = FlowFilter;
-
-        }
-
-        field(9; "Last Month Filter"; Date)
-        {
-            Editable = false;
-            FieldClass = FlowFilter;
-
-        }
-
-        field(10; "Last 6 Months Filter"; Date)
+        field(8; "Posting Date Filter"; Date)
         {
             Editable = false;
             FieldClass = FlowFilter;

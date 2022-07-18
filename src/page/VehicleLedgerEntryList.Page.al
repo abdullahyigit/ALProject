@@ -20,10 +20,11 @@ page 60101 "Vehicle Ledger Entry List"
                     ApplicationArea = all;
                     ToolTip = 'Specifies the vehicle''s no.';
                 }
-                field("Transport Date"; "Transport Date")
+                field("Posting Date"; "Posting Date")
                 {
                     ApplicationArea = all;
-                    ToolTip = 'Specifies the transport date of the process';
+                    ToolTip = 'Specifies the posting date of the process';
+
                 }
                 field("Document Date"; "Document Date")
                 {
@@ -80,10 +81,10 @@ page 60101 "Vehicle Ledger Entry List"
                     ApplicationArea = all;
                     ToolTip = 'Specifies the document line no.';
                 }
-                field("Vehicle Explanation"; "Vehicle Explanation")
+                field("Vehicle Description"; "Vehicle Description")
                 {
                     ApplicationArea = all;
-                    ToolTip = 'Specifies a vehicle explanation for the entry.';
+                    ToolTip = 'Specifies a vehicle description for the entry.';
                 }
                 field(EntryNo; EntryNo)
                 {

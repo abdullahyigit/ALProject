@@ -24,10 +24,10 @@ table 60001 "Vehicle Ledger Entry Table"
                 end until CurrVehicle.Next() = 0;
             end;
         }
-        field(2; "Transport Date"; Date)
+        field(2; "Posting Date"; Date)
         {
             DataClassification = CustomerContent;
-            Caption = 'Transport Date';
+            Caption = 'Posting Date';
         }
         field(3; "Document Date"; Date)
         {
@@ -93,10 +93,10 @@ table 60001 "Vehicle Ledger Entry Table"
             DataClassification = CustomerContent;
             Caption = 'Document Line No.';
         }
-        field(14; "Vehicle Explanation"; Text[20])
+        field(14; "Vehicle Description"; Text[20])
         {
             DataClassification = CustomerContent;
-            Caption = 'Vehicle Explanation';
+            Caption = 'Vehicle Description';
         }
         field(15; EntryNo; Integer)
         {

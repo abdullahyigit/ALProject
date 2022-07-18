@@ -56,18 +56,4 @@ page 60100 "Vehicle List"
             }
         }
     }
-    trigger OnOpenPage()
-    var
-        PreviousYear: Date;
-        PreviousMonth: Date;
-        PreviousSixMonths: Date;
-    begin
-        PreviousYear := CALCDATE('-1Y', Today);
-        PreviousMonth := CALCDATE('-1A', Today);
-        PreviousSixMonths := CALCDATE('-6A', Today);
-        SetFilter("Last Year Filter", '> %1', PreviousYear);
-        SetFilter("Last Month Filter", '> %1', PreviousMonth);
-        SetFilter("Last 6 Months Filter", '> %1', PreviousSixMonths);
-
-    end;
 }
