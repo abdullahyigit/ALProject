@@ -1,4 +1,4 @@
-page 60100 "Vehicle List"
+page 60100 "Vehicles"
 {
     PageType = List;
     ApplicationArea = All;

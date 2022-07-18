@@ -1,4 +1,4 @@
-page 60102 "Vehicle Type List"
+page 60102 "Vehicle Types"
 {
     ApplicationArea = All;
     SourceTable = "Vehicle Type Table";
@@ -18,7 +18,7 @@ page 60102 "Vehicle Type List"
             repeater(GroupName)
             {
                 ShowCaption = false;
-                field("No."; "No.")
+                field("Code"; "Code")
                 {
                     ApplicationArea = all;
                     ToolTip = 'Specifies the vehicle type';

@@ -1,4 +1,4 @@
-page 60101 "Vehicle Ledger Entry List"
+page 60101 "Vehicle Ledger Entries"
 {
     PageType = List;
     UsageCategory = Lists;
